@@ -678,3 +678,59 @@ footer{
 #successModal{
 	text-align: center;
 }
+
+@media (max-width: 1199.98px) {
+	.container{
+		max-width: 100%;
+    	padding: 0 15px;
+	}
+	.main-head{
+		.btn{
+			max-width: 140px;
+			padding: 5px 20px;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.desctop{
+		display: none;
+	}
+	.mobile{
+		display: block !important;
+		.top-nav {
+			flex-direction: column;
+			text-align: left;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			a{
+				display: block;
+				width: 100%;
+    			padding: 10px;
+			}
+		}
+	}
+	.nav-head {
+		background: #fff;
+		a{
+			color: #212121;
+		}
+		.addres-wrapper{
+			display: flex!important;
+			color: #212121;
+			margin: 20px 0;
+		}
+		.dop-info{
+			background: #F3F3F3;
+		}
+	}
+	.navbar-brand{
+		img{
+			filter: invert(100%);
+		}
+	}
+	.navbar-toggler {
+		border: none !important;
+		box-shadow: none!important;
+		outline: 0!important;
+	}
+}

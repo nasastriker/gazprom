@@ -16,7 +16,7 @@
 				<a href="" class="nav-link">Доставка</a>
 			</div>
 
-			<div class="addres-wrapper d-flex ">
+			<div class="addres-wrapper d-flex desctop">
 				<img src="img/map_ico.svg" class="mt-2 mr-2" alt="">
 				<div>
 					пос. Балакирево,<br>
@@ -41,10 +41,10 @@
 	    <div class="container">
 	    	<div class="navbar navbar-expand-lg">
 		        <div class="phone-wrapper mb-0 d-flex mobile">
-					<a href="#" class="nav-phone mx-3">
-						
-					</a>
-					<button>Заказать звонок</button>
+					<a class="navbar-brand" href="index.html">
+			        	<img src="img/logo-white.svg" alt="">
+			        </a>
+					<button class="btn blue" type="button" data-bs-toggle="modal" data-bs-target="#callModal" >Заказать звонок</button>
 				</div>
 		        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
 		            <span class="navbar-toggler-icon"></span>
@@ -62,60 +62,51 @@
 
 		            <div class="mobile">
 		            	<div class="top-nav ">
-							<a href="about.html">О компании</a>
-							<a href="blog.html">Блог</a>
-							<a href="otzyvy.html">Отзывы</a>
-							<a href="">Документы</a>
-							<a href="">Стоимость</a>
-							<a href="">Контакты</a>
-							<a href="">Акции</a>
+							<a href="" class="nav-link">Продукция</a>
+							<a href="" class="nav-link">Контакты</a>
+							<a href="" class="nav-link">О компании</a>
+							<a href="" class="nav-link">Доставка</a>
 						</div>
 
-						<div class="phone-wrapper d-flex ">
-							<a href="#" class="nav-phone mx-3">
-								<svg class="img phone_icon">
-								    <use xlink:href="img/sprite.svg#sprite--phone_icon"></use>
-								</svg>
-								<span>8 800 500-60-56</span>
-							</a>
-							<button>Заказать звонок</button>
-						</div>
+						<div class="dop-info">
+							<div class="addres-wrapper d-flex desctop">
+								<img src="img/map_ico.svg" class="mt-2 mr-2" alt="">
+								<div>
+									пос. Балакирево,<br>
+									ул. Заводская, д. 10
+								</div>
+							</div>
 
-						<div class="social_wrap">
-							<a href="mail-to:@info.com" class="mail my-3">
-								<svg class="img mail_icon icon_color">
-								    <use xlink:href="img/sprite.svg#sprite--mail_icon"></use>
-								</svg>
-								kedo@info.com
-							</a>
-							<div class="d-flex mt-3">
-								<a href="#">
-									<svg class="img social_icon mr-3 icon_color">
-									    <use xlink:href="img/sprite.svg#sprite--vk"></use>
-									</svg>
-								</a>
-								<a href="#">
-									<svg class="img social_icon icon_color">
-									    <use xlink:href="img/sprite.svg#sprite--tg"></use>
-									</svg>
+							<div class="phone-wrapper d-flex align-items-start mb-3">
+								<img src="img/phone_ico.svg" class="mt-2 mr-2" alt="">
+								<a href="tel:+7(49244)7-44-37" class="nav-phone">
+									<div>
+										<b>+7 (49244) 7-44-37</b><br>
+										<span>Пн-Пт 9:00 - 18:00</span>
+									</div>
 								</a>
 							</div>
-						</div>
 
-				        @@include('../bem-blocks/_button.html',{
-		                    "text": "Попробовать бесплатно",
-		                    "color": "@@color",
-		                    "class": "mb-3"
-		                })
+							<div class="social_wrap">
+								<a href="mail-to:@info.com" class="mail my-3">
+									<img src="img/mail_ico.svg" class="mr-2" alt="">
+									info@info.com
+								</a>
+							</div>
+							<div class="d-flex mt-3">
+								<a href="#" class="mr-3">
+									<img src="img/vb_ico.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/tg_ico.svg" alt="">
+								</a>
+							</div>
+							<img src="img/m_dot_blue.svg" class="my-3" alt="">
+							
+						</div>
 
 		            </div>
 		        </div>
-
-		        <!-- @@include('../bem-blocks/_button.html',{
-                    "text": "Попробовать бесплатно",
-                    "color": "@@color",
-                    "class": "my-3 desctop"
-                }) -->
 
 	    	</div>
 	    </div>
