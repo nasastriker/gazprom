@@ -7,7 +7,7 @@
 					<a href="index.html">
 						<img src="img/logo-white.svg" class="logo" alt="">
 					</a>
-					<a href="#" class="mt-4 btn blue">
+					<a href="#" class="mt-4 btn blue" data-bs-toggle="modal" data-bs-target="#successModal">
 						Заказать звонок
 					</a>
 				</div>
@@ -93,3 +93,63 @@
 		</div>
 	</div>
 </footer>
+
+<div class="to-top"></div>
+
+<div class="modal" id="callModal">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+
+			<div class="modal-wrapper" >
+				<form>
+		            <h3>Заказать обратный звонок</h3>
+		            <p>Оставьте ваши контакты и мы перезвоним вам в ближайшее рабочее время</p>
+
+		            <div class="mb-3">
+		                <input type="text" name="name" class="js-name" placeholder="Имя *">
+		            </div>
+		            <div class="mb-3">
+		                <input type="phone" name="phone" class="js-phone_number" placeholder="Телефон *">
+		            </div>
+
+		            <div class="mb-3">
+		                <textarea name="message" rows="6" placeholder="Сообщение"></textarea>
+		            </div>
+
+		            <button type="submit" class="btn blue w-100 mb-4">Отправить заявку</button>
+		            <div class="mb-4 form-check">
+		                <input type="checkbox" checked="checked" checked class="form-check-input" id="policy">
+		                <label class="form-check-label" for="policy">Нажимая кнопку “Отправить заявку”, вы соглашаетесь с политикой конфиденциальности</label>
+		            </div>
+
+		            <img src="img/dot_black.svg" alt="">
+		            
+
+		        </form>
+			</div>
+		</div>
+	</div>
+	<div class="modal-overflow"></div>
+</div>
+
+<div class="modal" id="successModal">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+
+			<div class="modal-wrapper" >
+				<form class="">
+		            <h3>Спасибо! Ваша заявка принята</h3>
+		            <p>После её обработки с вами свяжется менеджер</p> 
+
+		            <button type="submit" class="btn blue px-5 my-4">OK</button>
+		            
+
+		            <img src="img/dot_black.svg" alt="">
+		            
+
+		        </form>
+			</div>
+		</div>
+	</div>
+	<div class="modal-overflow"></div>
+</div>

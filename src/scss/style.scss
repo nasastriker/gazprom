@@ -95,6 +95,7 @@ label{
 	transition: all .3s;
 	font-size: 17px;
 	text-decoration: none!important;
+	position: relative;
 	&.blue{
 		background: var(--blue);
 		color: #fff;
@@ -103,67 +104,15 @@ label{
 		background: #fff;
 		color: var(--blue);
 	}
-	&:after{
-		display: none!important;
-	}
-	&:hover{
-		opacity: .9;
-	}
+	
+
 }
 .mobile{
 	display: none!important;
 }
 
-.nav-head{
-	position: absolute;
-	top: 0;
-	width: 100%;
-	color: #fff;
-	.top-nav {
-		display: flex;
-		align-items: center;
-		a{
-			margin-right: 20px;
-			&.navbar-brand{
-				margin-right: 30px;
-			}
-		}
-	}
-	.btn {
-		padding: 15px 20px;
-		font-size: 15px;
-	}
-	a{
-		color: #fff;
-		position: relative;
-		&.nav-link{
-			&:after{
-				content: '';
-				display: block;
-				height: 1px;
-				width: 0%;
-				background: #fff;
-				position: absolute;
-				transition: all .3s;
-			}
-			&:hover{
-				color: #fff;
-				&:after{
-					width: 100%;
-				}
-			}
-		}
-	}
-}
-.main-nav {
-	border-top: .5px solid #cbcbcb8c;
-	border-bottom: .5px solid #cbcbcb8c;
-	.navbar-nav {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-	}
-}
+
+
 
 .header{
 	padding: 200px 0 90px;
@@ -183,7 +132,11 @@ label{
 		.price{
 			color: #fff;
 			text-decoration: underline;
-			margin-left: 30px;	
+			margin-left: 30px;
+			transition: all .3s;
+			&:hover{
+				color: var(--blue);
+			}
 		}
 		.btn{
 			padding: 20px 50px;
@@ -227,6 +180,7 @@ label{
 	&-wrapper{
 		display: flex;
 		flex-wrap: wrap;
+		padding: 0;
 	}
 	&-item{
 		position: relative;
@@ -239,6 +193,7 @@ label{
 		}
 		img{
 			width: 100%;
+			transition: all .3s;
 		}
 		div{
 			padding: 30px;
@@ -251,10 +206,31 @@ label{
 			align-items: baseline;
 			height: 100%;
 		}
+		p{
+			font-size: 18px;
+			font-family: 'PlayRegular', sans-serif;
+			position: relative;
+			top: 70px;
+			opacity: 0;
+			transition: all .3s;
+		}
 		a{
 			color: #fff;
 			border: 1px solid #fff;
 			padding: 15px 20px;
+		}
+		&:hover{
+			img{
+				filter: brightness(50%);
+			}
+			p{
+				top: 0px;
+				opacity: 1;
+			}
+			a.btn{
+				background: var(--blue);
+				border: 1px solid var(--blue);
+			}
 		}
 		&:last-child{
 			display: block;
@@ -377,16 +353,17 @@ label{
 	h3{
 		font-size: 50px;
 		color:#fff;
-		padding: 0;
 	}
 	&-wrapper {
 		display: flex;
 		flex-wrap: wrap;
+		padding: 0;
 	}
 	&-item{
 		width: 33%;
 		padding: 15px;
 		display: flex;
+		position: relative;
 		.number{
 			font-size: 50px;
 			font-family: 'furore';
@@ -417,13 +394,28 @@ label{
 				align-items: baseline;
 			}
 		}
+		&:not(:last-child, :nth-child(3), :nth-child(5)){
+			&:after{
+				content: url(../img/arrow-white.svg);
+				display: block;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				right: -6px;
+				top: 50%;
+			}
+		}
 	}
 }
 .completed{
+	h3{
+
+	}
 	.nav-pills{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 0 12px;
 		.nav-link{
 			background: #F3F3F3;
 			color: #212121;
@@ -438,7 +430,166 @@ label{
 			height: 100%;
 		}
 	}
+	.slider-item{
+		position: relative;
+		.slide-info{
+			position: absolute;
+			bottom: -250px;
+			padding: 50px;
+			color: #fff;
+			transition: all .3s;
+			h5{
+				font-size: 28px;
+				font-family: 'furore';
+				margin-bottom: 40px;	
+			}
+			.slide-more-info{
+				font-weight: bold;
+				font-size: 17px;
+				dt{
+					color: var(--blue);
+					margin-right: 30px;
+					display: inline-block;
+					float: left;
+					width: 75px;
+					margin-bottom: 20px;
+				}
+				dd{
+					padding-left: 105px;
+					margin-bottom: 20px;
+				}
+				ol{
+					padding-left: 20px;
+				}
+			}
+			.supernatant{
+				opacity: 0;
+				transition: all .3s;
+			}
+		}
+		&:hover{
+			.slide-info{
+				position: absolute;
+				bottom: 0px;
+			}
+			.supernatant{
+				opacity: 1;
+			}
+		}
+	}
+	.slider-controls{
+		display: flex;
+		justify-content: flex-end;
+  		margin-top: 20px;
+		.control-btn{
+			width: 55px;
+			height: 55px;
+			border: 1px solid #cbcbcb;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			&.active{
+				border: 1px solid var(--blue);
+				background: var(--blue);
+			}
+		}
+	}
+	.lSAction {
+		display: flex;
+		position: relative;
+		justify-content: flex-end;
+		margin-top: 30px;
+		a{
+			position: static;
+			width: 55px;
+			height: 55px;
+			border: 1px solid #cbcbcb;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			opacity: 1;
+			&.lSNext{
+				rotate: 180deg;
+				margin-left: 20px;
+			}
+			&:hover{
+				border: 1px solid var(--blue);
+				background: var(--blue);
+			}
+		}
+	}
 
+}
+.individual_form{
+	background: var(--blue);
+	color: #fff;
+	margin-top: 80px;
+	padding: 80px 0 0;
+	max-height: 700px;
+  	margin-bottom: 250px;
+  	&_title{
+  		padding-right: 80px;
+  		font-size: 21px;
+  	}
+  	h3{
+  		margin: 50px 0 40px;
+		font-weight: normal;
+  	}
+  	a{
+  		color:#fff;
+  	}
+	form{
+		background: #fff;
+		color: #212121;
+		padding: 30px 50px;
+		max-width: 600px;
+		h3{
+			font-size: 30px;
+			margin: 0px 0 20px;
+			text-align: center;
+		}
+		p{
+			text-align: center;
+		}
+	}
+	.more-info{
+		color:#212121;
+		margin-top: 120px;
+	}
+}
+// ================ FORM ====================
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+.file-input__wrapper{
+	text-align: left;
+	position: relative;
+	label{
+		cursor: pointer;
+	}
+}
+input,
+textarea{
+	border-radius: 0;
+	outline: none;
+	width: 100%;
+	border: 1px solid #E4E4E4;
+	padding: 20px;
+	box-shadow: none!important;
+	&.error{
+		border: 1px solid #FF7070!important;
+	}
+}
+.input__file {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
+.form-check{
+	text-align: left;
 }
 .clients{
 	h4{
@@ -448,6 +599,13 @@ label{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		img{
+			filter: saturate(0%);
+			transition: all .3s;
+			&:hover{
+				filter: saturate(100%);
+			}
+		}
 	}
 }
 
@@ -469,19 +627,10 @@ footer{
 			a{
 				color: #C9C9C9;
 				position: relative;
-				&:after{
-					content: '';
-					display: block;
-					height: 1px;
-					width: 0%;
-					background: #C9C9C9;
-					position: absolute;
-					transition: all .3s;
-				}
+				transition: all .3s;
+				
 				&:hover{
-					&:after{
-						width: 100%;
-					}
+					color: var(--blue);
 				}
 			}
 		}
@@ -489,4 +638,43 @@ footer{
 }
 .addres-wrapper{
 	align-items: flex-start;
+}
+
+.to-top{
+	border: 1px solid #fff;
+	position: fixed;
+	bottom: 100px;
+	right: 50px;
+	opacity: 0;
+	width: 53px;
+	height: 53px;
+	cursor: pointer;
+	&:after{
+		content: url('../img/blue_arrow.svg');
+		display: block;
+		transform: rotate(-90deg);
+	}
+	&.active{
+		display: block;
+		opacity: 1;
+	}
+}
+// ====================== MODAL ========================
+
+.modal{
+	&-wrapper{
+		padding: 30px 40px;
+
+		h3{
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		p{
+			text-align: center;
+		}
+	}
+}
+#successModal{
+	text-align: center;
 }
