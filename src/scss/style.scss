@@ -169,6 +169,28 @@ label{
 			}
 		}
 	}
+	&.about-bg{
+		background: #fafafa;
+		.about-head-wrapper {
+			background: #fff;
+			width: 95%;
+			margin: 20px auto;
+			padding: 50px 40px;
+			position: relative;
+			z-index: 2;
+		}
+		h1{
+			color: #212121;
+			font-size: 50px;
+			margin-bottom: 30px;
+			text-align: left;
+		}
+		p{
+			text-align: left;
+			margin-bottom: 30px;
+			padding-right: 50px;
+		}
+	}
 }
 
 .competention{
@@ -732,5 +754,138 @@ footer{
 		border: none !important;
 		box-shadow: none!important;
 		outline: 0!important;
+	}
+
+	.header{
+		margin-bottom: 40px;
+		h1{
+			margin-top: 0;
+			font-size: 25px;
+			span{
+				font-size: 17px;
+			}
+		}
+		.btn-row {
+			flex-direction: column;
+			display: flex;
+    		align-items: center;
+    		.btn{
+    			margin-right: 0!important;
+    			margin-bottom: 40px;
+    		}
+    		.price{
+    			margin-left: 0;
+    		}
+		}
+		.main-sub-block{
+			margin-top: 100px;
+			padding: 10px 0;
+			flex-wrap: wrap;
+			.sub-item{
+				width: 50%;
+				padding: 15px;
+				span{
+					margin-bottom: 20px;
+					b{
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	.competention{
+		h2{
+			font-size: 40px;
+		}
+		&-wrapper{
+			// flex-direction: column;
+		}
+		&-item{
+			width: 50%;
+			max-width: none;
+			word-break: break-word;
+			h5{
+				font-size: 18px;
+			}
+			div{
+				padding: 15px;
+				p,a{
+					display: none;
+				}
+			}
+			&:last-child{
+				a{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	.advantage{
+		margin-bottom: 30px;
+		.nav-pills{
+			margin-bottom: 20px;
+			.nav-link{
+				font-size: 30px;
+			}
+		}
+		.full-width{
+			display: none;
+		}
+	}
+
+	.about{
+		background-size: cover;
+		.info-wrap{
+			padding-right: 0;
+		}
+		&-wrapper{
+			flex-direction: column;
+			margin-top: 40px;
+			.about-item{
+				width: 100%;
+			}
+		}
+	}
+	.work-order{
+		h3{
+			font-size: 40px;
+		}
+		.work-order-wrapper{
+			flex-direction: column;
+		}
+		.work-order-item{
+			width: 100%;
+			&:not(:last-child, :nth-child(3), :nth-child(5)){
+				&::after{
+					display: none;
+				}
+			}
+		}
+
+	}
+	.individual_form{
+		margin-bottom: 0;
+		max-height: none;
+		padding-bottom: 40px;
+		&_title{
+			padding-right: 0;
+			font-size: 18px;
+		}
+	}
+
+	.clients{
+		h4{
+			font-size: 30px;
+		}
+		&-wrapper{
+			flex-wrap: wrap;
+			justify-content: center;
+			img{
+				width: calc(45% - 40px);
+    			margin: 20px;
+			}
+		}
 	}
 }

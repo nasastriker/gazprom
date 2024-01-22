@@ -26,12 +26,53 @@ $(document).ready(function() {
             }
         ]
     });
+
     $('#goToPrevSlide').on('click', function() {
         worksSlider.goToPrevSlide();
     });
     $('#goToNextSlide').on('click', function() {
         worksSlider.goToNextSlide();
     });
+
+     var aboutBasicSlider = $("#about-basic-slider").lightSlider({
+        item: 1,
+        pager: false,
+        autoWidth: false,
+        slideMargin: 10,
+        loop: true,
+        controls: true,
+        prevHtml: '<img src="../img/arrow-left.svg">',
+        nextHtml: '<img src="../img/arrow-left.svg">',
+    });
+
+    var worksSlider = $("#sert-slider").lightSlider({
+        item: 4,
+        pager: false,
+        autoWidth: false,
+        slideMargin: 10,
+        loop: true,
+        controls: true,
+        prevHtml: '<img src="../img/arrow-left.svg">',
+        nextHtml: '<img src="../img/arrow-left.svg">',
+        responsive: [{
+                breakpoint: 800,
+                settings: {
+                    item: 2,
+                    slideMove: 1,
+                    slideMargin: 6,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    item: 1,
+                    slideMove: 1
+                }
+            }
+        ]
+    });
+
+    
 
     $('.completed .nav-item').on('click', function() {
         // $(".works-slider").lightSlider({
