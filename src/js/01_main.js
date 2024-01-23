@@ -7,8 +7,8 @@ $(document).ready(function() {
         slideMargin: 10,
         loop: true,
         controls: true,
-        prevHtml: '<img src="../img/arrow-left.svg">',
-        nextHtml: '<img src="../img/arrow-left.svg">',
+        prevHtml: '<img src="img/arrow-left.svg">',
+        nextHtml: '<img src="img/arrow-left.svg">',
         responsive: [{
                 breakpoint: 800,
                 settings: {
@@ -41,8 +41,8 @@ $(document).ready(function() {
         slideMargin: 10,
         loop: true,
         controls: true,
-        prevHtml: '<img src="../img/arrow-left.svg">',
-        nextHtml: '<img src="../img/arrow-left.svg">',
+        prevHtml: '<img src="img/arrow-left.svg">',
+        nextHtml: '<img src="img/arrow-left.svg">',
     });
 
     var worksSlider = $("#sert-slider").lightSlider({
@@ -52,8 +52,8 @@ $(document).ready(function() {
         slideMargin: 10,
         loop: true,
         controls: true,
-        prevHtml: '<img src="../img/arrow-left.svg">',
-        nextHtml: '<img src="../img/arrow-left.svg">',
+        prevHtml: '<img src="img/arrow-left.svg">',
+        nextHtml: '<img src="img/arrow-left.svg">',
         responsive: [{
                 breakpoint: 800,
                 settings: {
@@ -79,8 +79,8 @@ $(document).ready(function() {
         slideMargin: 10,
         loop: true,
         controls: true,
-        prevHtml: '<img src="../img/arrow-left.svg">',
-        nextHtml: '<img src="../img/arrow-left.svg">',
+        prevHtml: '<img src="img/arrow-left.svg">',
+        nextHtml: '<img src="img/arrow-left.svg">',
         responsive: [{
                 breakpoint: 800,
                 settings: {
