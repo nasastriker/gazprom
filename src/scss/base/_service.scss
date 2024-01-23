@@ -1,0 +1,55 @@
+.header{
+	&.service{
+		background: url(../img/service_bg_tocar.jpg) no-repeat;
+		background-size: cover;
+  		color: #fff;
+  		padding: 200px 0 0px;
+  		.breadcrump{
+  			a{
+  				color: #fff;
+  			}
+  			.breadcrumb-item{
+				&.active{
+					color: #9C9C9C;
+				}
+  			}
+  		}
+  		form{
+  			background: #fff;
+  			padding: 30px 30px 10px;
+  			color: #212121;
+  		}
+	}
+
+}
+.compound{
+	padding: 50px 0;
+	h2{
+		margin-top: 40px;
+	}
+	&-wrapper{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 30px;
+	}
+	&-item{
+		width: 48%;
+		margin-bottom: 30px;
+		background: var(--blue);
+		padding: 20px;
+		@media (max-width: 991.98px) {
+			width: 100%;
+		}
+	}
+	.item-container{
+		color: #fff;
+	}
+	&-item-title{
+		display: flex;
+		margin-bottom: 15px;
+		img{
+			margin-right: 20px;
+		}
+	}
+}

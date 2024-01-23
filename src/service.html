@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"АО «Газпром бытовые системы»",
+"description":"АО «Газпром бытовые системы»",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+    <main class="main">
+        @@include('components/page-blocks/_header.html',{
+        "class": "white-head"
+        })
+        <header class="header service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="breadcrump">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Токарная обработка</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Токарная обработка</h1>
+                        <p>Токарная обработка - одна из основных видов металлообработки. Применяется для обработки наружных и внутренних поверхностей изделий. На токарных станках изготавливаем цилиндрические и конические заготовки, обработка фасонных и торцевых поверхностей изделий, нарезание наружной и внутренней резьбы, а также сверление отверстий и проточка канавок.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="">
+                            <form>
+                                <p>Напишите о вашей задаче, мы перезвоним вам и проконсультируем по стоимости и порядку работ. </p>
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="js-name" placeholder="Имя *">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="phone" name="phone" class="js-phone_number" placeholder="Телефон *">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="mail" name="mail" class="js-mail" placeholder="E-mail *">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea name="message" rows="6" placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="file-input__wrapper mb-3">
+                                    <input name="file" type="file" id="input__file" class="input__file" multiple>
+                                    <label for="input__file" class="input__file-button">
+                                        <span class="input__file-icon-wrapper">
+                                            <img class="input__file-icon mr-2" src="img/file_ico.svg" alt="Прикрепить фото...">
+                                        </span>
+                                        <span class="input__file-button-text">Прикрепить файл... (pdf, jpg, png, до 30 мб) </span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn blue w-100 mb-4">Отправить заявку на расчёт</button>
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" checked="checked" checked class="form-check-input" id="policy">
+                                    <label class="form-check-label" for="policy">Нажимая кнопку “Отправить заявку”, вы соглашаетесь с политикой конфиденциальности</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="compound">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Токарные работы выполняются по чертежам, или по образцам деталей с применением, при необходимости 3D – моделирования. </p>
+                        <h2>состав услуги</h2>
+
+                        <div class="compound-wrapper">
+                            <div class="compound-item">
+                                <div class="item-container">
+                                    <div class="compound-item-title">
+                                        <img src="img/c_01.svg" alt="">
+                                        <h5>Бесплатная консультация</h5>
+                                    </div>
+                                    <p>Рассмотрение нашими специалистами технической документации на возможность изготовления заказа.</p>
+                                </div>
+                            </div>
+                            <div class="compound-item">
+                                <div class="item-container">
+                                    <div class="compound-item-title">
+                                        <img src="img/c_02.svg" alt="">
+                                        <h5>опытная партия</h5>
+                                    </div>
+                                    <p>Рассмотрение нашими специалистами технической документации на возможность изготовления заказа.</p>
+                                </div>
+                            </div>
+                            <div class="compound-item">
+                                <div class="item-container">
+                                    <div class="compound-item-title">
+                                        <img src="img/c_03.svg" alt="">
+                                        <h5>Производство</h5>
+                                    </div>
+                                    <p>Рассмотрение нашими специалистами технической документации на возможность изготовления заказа.</p>
+                                </div>
+                            </div>
+                            <div class="compound-item">
+                                <div class="item-container">
+                                    <div class="compound-item-title">
+                                        <img src="img/c_04.svg" alt="">
+                                        <h5>Контроль качества</h5>
+                                    </div>
+                                    <p>Рассмотрение нашими специалистами технической документации на возможность изготовления заказа.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-order">
+            <div class="container">
+                <div class="row">
+                    <h3>Порядок работ</h3>
+                    <div class="work-order-wrapper">
+                        <div class="work-order-item">
+                            <div class="item-wrap">
+                                <span class="number">1</span>
+                                <p>Получение специалистами от клиентов технической документации в виде чертежей и данных по объему и срокам для выполнения заказа. При отсутствии чертежей возможно предоставление образца детали.</p>
+                            </div>
+                        </div>
+                        <div class="work-order-item">
+                            <div class="item-wrap">
+                                <span class="number">2</span>
+                                <p>Рассмотрение нашими специалистами технической документации на возможность изготовления заказа.</p>
+                                <a href="">Как рассчитывается время изготовления?</a>
+                            </div>
+                        </div>
+                        <div class="work-order-item">
+                            <div class="item-wrap">
+                                <span class="number">3</span>
+                                <p>Расчет норм расхода сырья и себестоимости изготовления заказа. Определение сроков выполнения заказа.
+                                    Согласование технической документации в виде чертежей, себестоимости и сроков исполнения заказа.</p>
+                                <a href="">Как рассчитывается стоимость?</a>
+                            </div>
+                        </div>
+                        <div class="work-order-item">
+                            <div class="item-wrap">
+                                <span class="number">4</span>
+                                <p>Изготовление опытной партии при серийном производстве заказа, согласование контрольных образцов при мелко- серийном производстве.</p>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <div class="work-order-item">
+                            <div class="item-wrap">
+                                <span class="number">5</span>
+                                <p>Изготовление и контроль соответствия полученных деталей заданным техническим требованиям чертежа и техпроцесса.
+                                    Информирование заказчика о ходе выполнения работ и поставка готовых изделий.</p>
+                            </div>
+                        </div>
+                        <div class="work-order-item">
+                            <div class="item-wrap">
+                                <p>На всех этапах работы специалист предоставляет бесплатную консультацию клиенту и грамотно отвечает на его вопросы.</p>
+                                <a href="" class="btn white" data-bs-toggle="modal" data-bs-target="#callModal">оставить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deserts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Преимущества заказа у нас</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="deserts-wrapper">
+                            <div class="deserts-item">
+                                <div class="item-content">
+                                    <img src="img/about/about_ico_1.svg" alt="">
+                                    <p>30 лет производственного и технологического опыта</p>
+                                    <img src="img/dot_black_deserts.svg" class="img_dots" alt="">
+                                </div>
+                            </div>
+                            <div class="deserts-item">
+                                <div class="item-content">
+                                    <img src="img/about/about_ico_2.svg" alt="">
+                                    <p>Высокое качество производимой и обрабатываемой продукции. Контроль качества на всех стадиях производства</p>
+                                    <img src="img/dot_black_deserts.svg" class="img_dots" alt="">
+                                </div>
+                            </div>
+                            <div class="deserts-item">
+                                <div class="item-content">
+                                    <img src="img/about/about_ico_3.svg" alt="">
+                                    <p>Наличие необходимого оборудования, четкое соблюдение технологий</p>
+                                    <img src="img/dot_black_deserts.svg" class="img_dots" alt="">
+                                </div>
+                            </div>
+                            <div class="deserts-item">
+                                <div class="item-content">
+                                    <img src="img/about/about_ico_4.svg" alt="">
+                                    <p>Соблюдение сроков и гибкая ценовая политика</p>
+                                    <img src="img/dot_black_deserts.svg" class="img_dots" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="completed">
+            <div class="container">
+                <div class="row">
+                    <h3 class="mb-4">Выполненные работы</h3>
+                </div>
+                <div class="row">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="works-all" role="tabpanel" aria-labelledby="works-all-tab" tabindex="0">
+                            <div class="slider-wrapper works-slider" id="works-all-slider">
+                                <div class="slider-item">
+                                    <img src="img/work_1.webp" alt="">
+                                    <div class="slide-info">
+                                        <h5>Выполненные работы 1</h5>
+                                        <div class="slide-more-info">
+                                            <dl>
+                                                <dt>Клиент:</dt>
+                                                <dd>Объединенная авиастроительная корпорация</dd>
+
+                                                <div class="supernatant">
+                                                    <dt>Задача:</dt>
+                                                    <dd>Мы много работаем с наукоемкими отраслями, но также предлагаем высокоточную обработку и изготовление любых запчастей для промышленного оборудования. От пельменных барабанов до просечных ножей для гофрокартона.</dd>
+
+                                                    <dt>Что было сделано:</dt>
+                                                    <dd>
+                                                        <ol>
+                                                            <li>Постоянная работа по совершенствованию серийной и освоению новой продукции.</li>
+                                                            <li>Использование передовых ресурсосберегающих и экологически чистых технологий.</li>
+                                                        </ol>
+                                                    </dd>
+                                                    
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/work_1.webp" alt="">
+                                    <div class="slide-info">
+                                        <h5>Выполненные работы 1</h5>
+                                        <div class="slide-more-info">
+                                            <dl>
+                                                <dt>Клиент:</dt>
+                                                <dd>Объединенная авиастроительная корпорация</dd>
+
+                                                <div class="supernatant">
+                                                    <dt>Задача:</dt>
+                                                    <dd>Мы много работаем с наукоемкими отраслями, но также предлагаем высокоточную обработку и изготовление любых запчастей для промышленного оборудования. От пельменных барабанов до просечных ножей для гофрокартона.</dd>
+
+                                                    <dt>Что было сделано:</dt>
+                                                    <dd>
+                                                        <ol>
+                                                            <li>Постоянная работа по совершенствованию серийной и освоению новой продукции.</li>
+                                                            <li>Использование передовых ресурсосберегающих и экологически чистых технологий.</li>
+                                                        </ol>
+                                                    </dd>
+                                                    
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-basic completed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="mt-5">Производство</h3>
+                        <p>В нашей работе мы используем передовое оборудование: ___ ____</p>
+
+                        <div class="slider-wrapper " id="about-basic-slider">
+                            <div class="slider-item">
+                                <img src="img/about/about_section_bg.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        
+                        
+                        <div class="delivery-wrapper">
+
+                            <div class="delivery-item condition">
+                                <div class="item-wrap">
+                                    <div class="delivery-title">
+                                        <img src="img/delivery_condition.svg" alt=">Условия доставки">
+                                        <span>Условия доставки</span>
+                                    </div>
+                                    <p>Доставка готовой продукции осуществляется по всей территории России. Мы сотрудничаем с надежными транспортными компаниями, такими как "Деловые линии", "СДЕК" и другими, чтобы обеспечить удобство для наших клиентов. </p>
+                                    <p><b>Доставка до терминала транспортной компании осуществляется бесплатно.</b> Однако, стоимость доставки до адреса заказчика рассчитывается индивидуально, учитывая удаленность места доставки, габариты и вес груза.</p>
+                                    <p>Собственным автотранспортом доставка осуществляется в пределах г. Владимир и области, а также близлежащих населенных пунктов соседних областей.</p>
+                                </div>
+                            </div>
+
+                            <div class="delivery-item">
+                                <div class="item-wrap">
+                                    <div class="delivery-title">
+                                        <img src="img/box.svg" alt="Самовывоз">
+                                        <span>Самовывоз</span>
+                                    </div>
+                                    <p>Если вы предпочитаете самостоятельно забрать заказ, у нас также есть возможность самовывоза. </p>
+                                    <p><b>Вы можете приехать на производство, расположенное по адресу:<br></b> 601630, Владимирская область, Александровский район, пос. Балакирево, ул. Заводская, 10. </p>
+                                    <p>Однако, перед приездом, пожалуйста, предварительно свяжитесь с нами, чтобы согласовать время и детали самовывоза.</p>
+                                </div>
+                                <div class="item-wrap">
+                                    <img src="img/map.webp" alt="">
+                                </div>
+                            </div>
+                            
+                            <p>Мы всегда стараемся предложить удобные и надежные услуги доставки, чтобы обеспечить удовлетворение наших клиентов. Наша команда готова ответить на все вопросы и помочь с организацией доставки вашей продукции.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="mb-5">Наши Клиенты</h4>
+                        <div class="clients-wrapper">
+                            <img src="img/metro.webp" alt="">
+                            <img src="img/mo.webp" alt="">
+                            <img src="img/roskosmos.webp" alt="">
+                            <img src="img/oak.webp" alt="">
+                            <img src="img/volg_aero.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="mt-5 mb-5">Вопросы и ответы</h3>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Как рассчитывается стоимость?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Стоимость доставки не входит в стоимость услуг по фрезеровке/лазерной резке и рассчитывается индивидуально.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Как рассчитывается стоимость?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Стоимость доставки не входит в стоимость услуг по фрезеровке/лазерной резке и рассчитывается индивидуально.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Как рассчитывается стоимость?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Стоимость доставки не входит в стоимость услуг по фрезеровке/лазерной резке и рассчитывается индивидуально.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </section> 
+        
+
+        
+    </main>
+    @@include('components/page-blocks/_footer.html',{
+    "color": "blue"
+    })
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

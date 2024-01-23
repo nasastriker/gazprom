@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"АО «Газпром бытовые системы»",
+"description":"АО «Газпром бытовые системы»",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+    <main class="main">
+        @@include('components/page-blocks/_header.html',{
+        "class": "white-head"
+        })
+        <header class="header about-bg text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="breadcrump">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="reviews completed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Отзывы</h1>
+                        <ul class="nav nav-pills mb-3" id="works-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="works-all-tab" data-bs-toggle="pill" data-bs-target="#works-all" type="button" role="tab" aria-controls="works-all" aria-selected="true">Всe</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="turning-tab" data-bs-toggle="pill" data-bs-target="#turning" type="button" role="tab" aria-controls="turning" aria-selected="false">Токарная обработка</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="milling-tab" data-bs-toggle="pill" data-bs-target="#milling" type="button" role="tab" aria-controls="milling" aria-selected="false">Фрезерная<br>обработка</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="grinding-tab" data-bs-toggle="pill" data-bs-target="#grinding" type="button" role="tab" aria-controls="grinding" aria-selected="false">Шлифовальные<br>работы</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="stamping-tab" data-bs-toggle="pill" data-bs-target="#stamping" type="button" role="tab" aria-controls="stamping" aria-selected="false">Штамповка деталей</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="instrumental-tab" data-bs-toggle="pill" data-bs-target="#instrumental" type="button" role="tab" aria-controls="instrumental" aria-selected="false">Инструментальное<br>производство</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="founding-tab" data-bs-toggle="pill" data-bs-target="#founding" type="button" role="tab" aria-controls="founding" aria-selected="false">Литье деталей</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="cutting-tab" data-bs-toggle="pill" data-bs-target="#cutting" type="button" role="tab" aria-controls="cutting" aria-selected="false">Резка трубок</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="works-all" role="tabpanel" aria-labelledby="works-all-tab" tabindex="0">
+                                <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="turning" role="tabpanel" aria-labelledby="turning-tab" tabindex="0">
+                               <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="milling" role="tabpanel" aria-labelledby="milling-tab" tabindex="0">
+                                <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="grinding" role="tabpanel" aria-labelledby="grinding-tab" tabindex="0">
+                                <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="stamping" role="tabpanel" aria-labelledby="stamping-tab" tabindex="0">
+                                <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="instrumental" role="tabpanel" aria-labelledby="instrumental-tab" tabindex="0">
+                                <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="founding" role="tabpanel" aria-labelledby="founding-tab" tabindex="0">
+                                <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cutting" role="tabpanel" aria-labelledby="cutting-tab" tabindex="0">
+                                <div class="review-wrapper">
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                    @@include('components/page-blocks/_review.html')
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="clients py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="mb-5">Наши Клиенты</h4>
+                        <div class="clients-wrapper">
+                            <img src="img/metro.webp" alt="">
+                            <img src="img/mo.webp" alt="">
+                            <img src="img/roskosmos.webp" alt="">
+                            <img src="img/oak.webp" alt="">
+                            <img src="img/volg_aero.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    @@include('components/page-blocks/_footer.html',{
+    "color": "blue"
+    })
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

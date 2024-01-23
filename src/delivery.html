@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"АО «Газпром бытовые системы»",
+"description":"АО «Газпром бытовые системы»",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+    <main class="main">
+        @@include('components/page-blocks/_header.html',{
+        "class": "white-head"
+        })
+        <header class="header about-bg text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="breadcrump">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Доставка</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="delivery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Доставка</h1>
+                        
+                        <div class="delivery-wrapper">
+
+                            <div class="delivery-item condition">
+                                <div class="item-wrap">
+                                    <div class="delivery-title">
+                                        <img src="img/delivery_condition.svg" alt=">Условия доставки">
+                                        <span>Условия доставки</span>
+                                    </div>
+                                    <p>Доставка готовой продукции осуществляется по всей территории России. Мы сотрудничаем с надежными транспортными компаниями, такими как "Деловые линии", "СДЕК" и другими, чтобы обеспечить удобство для наших клиентов. </p>
+                                    <p><b>Доставка до терминала транспортной компании осуществляется бесплатно.</b> Однако, стоимость доставки до адреса заказчика рассчитывается индивидуально, учитывая удаленность места доставки, габариты и вес груза.</p>
+                                    <p>Собственным автотранспортом доставка осуществляется в пределах г. Владимир и области, а также близлежащих населенных пунктов соседних областей.</p>
+                                </div>
+                            </div>
+
+                            <div class="delivery-item">
+                                <div class="item-wrap">
+                                    <div class="delivery-title">
+                                        <img src="img/box.svg" alt="Самовывоз">
+                                        <span>Самовывоз</span>
+                                    </div>
+                                    <p>Если вы предпочитаете самостоятельно забрать заказ, у нас также есть возможность самовывоза. </p>
+                                    <p><b>Вы можете приехать на производство, расположенное по адресу:<br></b> 601630, Владимирская область, Александровский район, пос. Балакирево, ул. Заводская, 10. </p>
+                                    <p>Однако, перед приездом, пожалуйста, предварительно свяжитесь с нами, чтобы согласовать время и детали самовывоза.</p>
+                                </div>
+                                <div class="item-wrap">
+                                    <img src="img/map.webp" alt="">
+                                </div>
+                            </div>
+                            
+                            <p>Мы всегда стараемся предложить удобные и надежные услуги доставки, чтобы обеспечить удовлетворение наших клиентов. Наша команда готова ответить на все вопросы и помочь с организацией доставки вашей продукции.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+    </main>
+    @@include('components/page-blocks/_footer.html',{
+    "color": "blue"
+    })
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

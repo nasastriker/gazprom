@@ -88,6 +88,7 @@ label{
 		font-size: 14px;
 	}
 }
+
 .btn{
 	font-family: 'furore';
 	padding: 20px;
@@ -118,6 +119,7 @@ label{
 	padding: 200px 0 90px;
 	&.index-bg{
 		background: url(../img/header_bg.webp) no-repeat;
+		text-align: center;
 	}
 	h1{
 		color: #fff;
@@ -189,6 +191,11 @@ label{
 			text-align: left;
 			margin-bottom: 30px;
 			padding-right: 50px;
+		}
+	}
+	&.text-center{
+		*{
+			text-align: center!important;
 		}
 	}
 }
@@ -714,6 +721,9 @@ footer{
 	}
 }
 @media (max-width: 991.98px) {
+	.header.about-bg{
+		padding: 90px 0 10px;
+	}
 	.desctop{
 		display: none;
 	}
@@ -885,6 +895,87 @@ footer{
 			img{
 				width: calc(45% - 40px);
     			margin: 20px;
+			}
+		}
+	}
+}
+.reviews,
+.delivery{
+	background: #fafafa;
+	h1{
+		margin-bottom: 40px;
+	}
+	#works-tab{
+		padding: 0;
+	}
+}
+.review-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 40px 0;
+	.review-bkt{
+		display: block;
+		margin: 0 auto 40px;
+	}
+ 	.review{
+  		width: 48%;
+		border: 1px solid #CBCBCB;
+		margin-bottom: 40px;
+		padding: 25px;
+		&-img{
+			margin: 40px 0;
+		}
+		@media (max-width: 991.98px) {
+			width: 100%;
+		}
+
+  	}
+  	.autor-row {
+		display: flex;
+		align-items: center;
+		img{
+			margin-right: 20px;
+		}
+		p{
+			font-weight: bold;
+			margin: 0;
+			font-size: 15px;
+		}
+
+	}
+	ul{
+		color: var(--blue);
+		span{
+			color: #212121;
+		}
+	}
+}
+
+.delivery{
+	margin-bottom: 50px;	
+	&-item{
+		background: #f3f3f3;
+		padding: 30px;
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+		}
+	}
+	&-title{
+		margin-bottom: 30px;
+		font-family: 'furore';
+		font-weight: bold;
+		font-size: 21px;
+		display: flex;
+  		align-items: center;
+		img{
+			margin-right: 20px;
+			@media (max-width: 991.98px) {
+				margin-right: 15px;
 			}
 		}
 	}
