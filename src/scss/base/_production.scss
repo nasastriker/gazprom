@@ -1,0 +1,55 @@
+.header{
+	&.production{
+		background: url(../img/production.webp) no-repeat;
+		color: #fff;
+		background-size: cover;
+  		padding: 200px 0 0px;
+		form{
+			background: #fff;
+  			padding: 30px 30px 10px;
+  			color: #212121;
+		}
+	}
+}
+.production{
+	padding: 100px 0 50px;
+	h2{
+		margin-bottom: 30px;
+	}
+	&-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-item{
+		width: 32%;
+		position: relative;
+		background: #f3f3f3;
+		margin-bottom: 30px;
+	}
+	&-item-title{
+		padding: 30px;
+		position: absolute;
+	}
+
+	&.deserts{
+		background: var(--blue);
+		color: #fff;
+		.deserts-item{
+			.item-content{
+				background: var(--blue);
+				color: #fff;
+				p{
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+
+	&.about-basic{
+		background: var(--blue);
+		color: #fff;
+		margin: 0;
+		padding: 0;
+	}
+}

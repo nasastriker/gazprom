@@ -72,6 +72,34 @@ $(document).ready(function() {
         ]
     });
 
+    var worksSlider = $("#clients-review").lightSlider({
+        item: 2,
+        pager: false,
+        autoWidth: false,
+        slideMargin: 10,
+        loop: true,
+        controls: true,
+        prevHtml: '<img src="../img/arrow-left.svg">',
+        nextHtml: '<img src="../img/arrow-left.svg">',
+        responsive: [{
+                breakpoint: 800,
+                settings: {
+                    item: 2,
+                    slideMove: 1,
+                    slideMargin: 6,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    item: 1,
+                    slideMove: 1
+                }
+            }
+        ]
+    });
+    
+
     
 
     $('.completed .nav-item').on('click', function() {

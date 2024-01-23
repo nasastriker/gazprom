@@ -980,3 +980,10 @@ footer{
 		}
 	}
 }
+
+.accordion-item{
+	.accordion-header *{
+		outline: 0!important;
+		box-shadow: none !important;
+	}
+}

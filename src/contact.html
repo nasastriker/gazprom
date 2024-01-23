@@ -10,489 +10,90 @@
 <body>
     <main class="main">
         @@include('components/page-blocks/_header.html',{
-        "class": "main-head"
+        "class": "white-head"
         })
-        <header class="header index-bg text-center">
+        <header class="header contact">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1>Балакиревский филиал<span>АО «Газпром бытовые системы»</span></h1>
-                        <div class="btn-row mt-5">
-                            <a href="" class="btn blue mr-5" onclick="callModal();">Услуги</a>
-                            <a href="" class="price">
-                                <img src="img/price.svg" class="mr-2" alt="">Прайс-лист
-                            </a>
+                        <div class="breadcrump">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="main-sub-block">
-                            <div class="sub-item">
-                                <span><b>30</b> лет</span>
-                                <div>Производственного и технологического опыта</div>
+                    <div class="col-sm-12">
+                        <h1>Контакты</h1>
+                        <div class="contact-wrapper">
+                            <div class="contact-item">
+                                <div class="addres-wrapper d-flex mb-3">
+                                    <img src="img/map_ico.svg" class="mt-2 mr-2" alt="">
+                                    <div>
+                                        пгт. Балакирево, 601630, Россия, Владимирская область, Александровский район, п. Балакирево, ул. Заводская, 10
+                                    </div>
+                                </div>
                             </div>
-                            <div class="sub-item">
-                                <span><b>>100</b></span>
-                                <div>Человек квалифицированного персонала</div>
+                            <div class="contact-item ps-sm-5">
+                                <div class="phone-wrapper d-flex align-items-start mb-3">
+                                    <img src="img/phone_ico.svg" class="mt-2 mr-2" alt="">
+                                    <a href="tel:+7(49244)7-44-37" class="nav-phone">
+                                        <div>
+                                            <b>+7 (49244) 7-44-37</b><br>
+                                            <span>Пн - Пт с 09:00 до 23:00<br>
+                                            Обед с 13:00 до 14:00<br>
+                                            Сб - Вс выходные</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="sub-item">
-                                <span>
-                                    <img src="img/main-sub-block-ico-1.svg" alt="">
-                                </span>
-                                <div>Контроль качества на всех стадиях производства</div>
-                            </div>
-                            <div class="sub-item">
-                                <span>
-                                    <img src="img/main-sub-block-ico-2.svg" alt="">
-                                </span>
-                                <div>Четкое соблюдение технологий</div>
+                            <div class="contact-item">
+                                <a href="mail-to:@info.com" class="mail my-3">
+                                    <img src="img/mail_ico.svg" class="mr-2" alt="">
+                                    info@info.com
+                                </a>
+                                <div class="d-flex mt-3">
+                                    <a href="#" class="mr-3">
+                                        <img src="img/vb_ico.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/tg_ico.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="img/contact_map.jpg" alt="">
+                    </div>
+                </div>
+
+                
             </div>
         </header>
-        <section class="competention mb-5">
-            <div class="container">
-                <h2>Наши компетенции</h2>
-                <p>Залогом успешного развития компании является постоянное внедрение передовых технологий при производстве продукции:</p>
-                <ul>
-                    <li>Постоянная работа по совершенствованию серийной и освоению новой продукции.</li>
-                    <li>Использование передовых ресурсосберегающих и экологически чистых технологий.</li>
-                </ul>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="competention-wrapper mt-5">
-                        <div class="competention-item">
-                            <img src="img/g_1.webp" alt="">
-                            <div>
-                                <h5>Токарная обработка</h5>
-                                <p>Использование передовых ресурсосберегающих и экологически чистых технологий.</p>
-                                <a href="" class="btn">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="competention-item">
-                            <img src="img/g_2.webp" alt="">
-                            <div>
-                                <h5>Фрезерная обработка</h5>
-                                <p>Через специалистов нашего завода прошли десятки тысяч самых разных чертежей</p>
-                                <a href="" class="btn">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="competention-item">
-                            <img src="img/g_3.webp" alt="">
-                            <div>
-                                <h5>Шлифовальные работы</h5>
-                                <p>Через специалистов нашего завода прошли десятки тысяч самых разных чертежей</p>
-                                <a href="" class="btn">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="competention-item">
-                            <img src="img/g_4.webp" alt="">
-                            <div>
-                                <h5>Штамповка деталей</h5>
-                                <p>Использование передовых ресурсосберегающих и экологически чистых технологий.</p>
-                                <a href="" class="btn">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="competention-item">
-                            <img src="img/g_5.webp" alt="">
-                            <div>
-                                <h5>Инструментальное производство</h5>
-                                <p>Через специалистов нашего завода прошли десятки тысяч самых разных чертежей</p>
-                                <a href="" class="btn">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="competention-item">
-                            <img src="img/g_6.webp" alt="">
-                            <div>
-                                <h5>Литье деталей под давлением</h5>
-                                <p>Использование передовых ресурсосберегающих и экологически чистых технологий.</p>
-                                <a href="" class="btn">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="competention-item">
-                            <img src="img/g_7.webp" alt="">
-                            <div>
-                                <h5>Резка трубок из эластомеров</h5>
-                                <p>Через специалистов нашего завода прошли десятки тысяч самых разных чертежей</p>
-                                <a href="" class="btn">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="competention-item">
-                            <div class="arrow-wrap">
-                                <a href="">Наша<br>продукция <img src="img/blue_arrow.svg" alt=""></a>
-                            </div>
-                            <img src="img/dot_black.svg" class="dotted" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="advantage">
+
+        <div class="requisites">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <p class="advantage-title">Почему выбирают нас</p>
-                        <div class="title-wrapper">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">ОПЫТ</button>
-                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">КАЧЕСТВО</button>
-                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">ПРОФЕССИОНАЛИЗМ</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">ГИБКОСТЬ</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                                <h5>Нашим брендам доверяют</h5>
-                                <p>Через специалистов нашего завода прошли десятки тысяч самых разных чертежей – от керамических аттеньюаторов для фазированных решеток до титановых суставов для роботов, накоплен огромный опыт в металлообработке.</p>
-                                <p>Мы много работаем с наукоемкими отраслями, но также предлагаем высокоточную обработку и изготовление любых запчастей для промышленного оборудования. От пельменных барабанов до просечных ножей для гофрокартона.</p>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                                <h5>Контроль поступающего металла</h5>
-                                <p>Нашим брендам доверяют и, внимательно изучая мнения потребителей, мы постоянно растем и совершенствуемся, стремясь делать жизнь наших покупателей комфортной и безопасной.</p>
-                                <p>Залогом успешного развития компании является постоянное внедрение передовых технологий при производстве продукции:</p>
-                                <p>Постоянная работа по совершенствованию серийной и освоению новой продукции.</p>
-                                <p>Использование передовых ресурсосберегающих и экологически чистых технологий.</p>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
-                                <h5>Имя гарантирует качество и безопасность продукции</h5>
-                                <p>Продукцию АО «Газпром бытовые системы» можно встретить во всех магазинах бытового газового оборудования России, а также во многих магазинах стран СНГ:</p>
-                                <p>Разветвленная дилерская сеть в России и странах СНГ.</p>
-                                <p>Ведущий экспортер газовых плит и комплектующих изделий на рынки сопредельных государств.</p>
-                                <p>Сотрудничество с крупными торговыми компаниями, органами исполнительной власти субъектов Федерации, газовыми хозяйствами и газораспределительными организациями.</p>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
-                                <h5>Контроль поступающего металла</h5>
-                                <p>Через специалистов нашего завода прошли десятки тысяч самых разных чертежей – от керамических аттеньюаторов для фазированных решеток до титановых суставов для роботов, накоплен огромный опыт в металлообработке.</p>
-                            </div>
-                        </div>
+                        <h2>Реквизиты</h2>
+
+                        <ul class="list-unstyled">
+                            <li><b>ОГРН:</b> 1023303153752</li>
+                            <li><b>ИНН:</b> 3311001852</li>
+                            <li><b>КПП:</b> 331101001</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <p class="full-width">
-                Балакиревский филиал
-            </p>
-        </section>
-        <section class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <div class="info-wrap">
-                            <h3>О нас</h3>
-                            <p>Балакиревский филиал АО «Газпром бытовые системы» создан в мае 1993 году и является единственным специализированным производителем в России и странах СНГ комплектующих изделий для бытовой газоиспользующей аппаратуры.</p>
-                            <p>Продукция производится на высокоскоростном оборудовании ведущих немецких, итальянских, швейцарских и других зарубежных станкостроительных фирм.</p>
-                            <b class="mb-4 d-block">Металлообработка на заказ для единичных изделий и партий малых объемов на универсальных станках</b>
-                            <p>Для изготовления деталей простой формы при малых объемах заказа наша компания располагает широким спектром универсального оборудования, квалифицированными станочниками с опытом.</p>
-                            <a href="" class="btn blue mt-5">Подробнее о нас</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="about-wrapper">
-                            <div class="about-item">
-                                <img src="img/about-ico-1.svg" alt="components/">
-                                <h4>Токарная обработка</h4>
-                                <p>На токарных станках изготавливаем цилиндрические и конические заготовки, обработка фасонных и торцевых поверхностей изделий, нарезание наружной и внутренней резьбы, а также сверление отверстий и проточка канавок.</p>
-                            </div>
-                            <div class="about-item">
-                                <img src="img/about-ico-2.svg" alt="">
-                                <h4>Шлифовальные работы</h4>
-                                <p>Плоская шлифовка: максимальные габариты обработки 1100 х 320 х 200 мм.<br>
-                                    Круглая шлифовка: максимальный диаметр -150 мм.<br>
-                                    Шлифовка отверстий диаметром до 100 мм<br>
-                                    Точность обработки до -/+ 0,001 мм, шероховатость поверхности до Ra - 0,08-1,6 мкм.</p>
-                            </div>
-                            <div class="about-item">
-                                <img src="img/about-ico-3.svg" alt="">
-                                <h4>Фрезерная обработка</h4>
-                                <p>Мы выполняем любые фрезерные работы на вертикальных и горизонтальных фрезерных станках, а так же станках с ЧПУ, предназначенных для выполнения разнообразных фрезерных, сверлильных и расточных работ при обработке деталей любой формы из стали, цветных металлов, сплавов и других материалов.</p>
-                            </div>
-                            <div class="about-item">
-                                <img src="img/about-ico-4.svg" alt="">
-                                <h4>Инструментальное производство</h4>
-                                <p>На предприятии работает инструментальное производство, которое располагает высокопроизводительным электроэрозионным, координатно-фрезерным, оптико-шлифовальным и другим оборудованием, позволяющим изготавливать приспособления, пресс-формы, штампы и режущие инструменты.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <img src="img/dot_white.svg" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="work-order">
-            <div class="container">
-                <div class="row">
-                    <h3>Порядок работ</h3>
-                    <div class="work-order-wrapper">
-                        <div class="work-order-item">
-                            <div class="item-wrap">
-                                <span class="number">1</span>
-                                <p>Получение специалистами от клиентов технической документации в виде чертежей и данных по объему и срокам для выполнения заказа. При отсутствии чертежей возможно предоставление образца детали.</p>
-                            </div>
-                        </div>
-                        <div class="work-order-item">
-                            <div class="item-wrap">
-                                <span class="number">2</span>
-                                <p>Рассмотрение нашими специалистами технической документации на возможность изготовления заказа.</p>
-                                <a href="">Как рассчитывается время изготовления?</a>
-                            </div>
-                        </div>
-                        <div class="work-order-item">
-                            <div class="item-wrap">
-                                <span class="number">3</span>
-                                <p>Расчет норм расхода сырья и себестоимости изготовления заказа. Определение сроков выполнения заказа.
-                                    Согласование технической документации в виде чертежей, себестоимости и сроков исполнения заказа.</p>
-                                <a href="">Как рассчитывается стоимость?</a>
-                            </div>
-                        </div>
-                        <div class="work-order-item">
-                            <div class="item-wrap">
-                                <span class="number">4</span>
-                                <p>Изготовление опытной партии при серийном производстве заказа, согласование контрольных образцов при мелко- серийном производстве.</p>
-                                <a href=""></a>
-                            </div>
-                        </div>
-                        <div class="work-order-item">
-                            <div class="item-wrap">
-                                <span class="number">5</span>
-                                <p>Изготовление и контроль соответствия полученных деталей заданным техническим требованиям чертежа и техпроцесса.
-                                    Информирование заказчика о ходе выполнения работ и поставка готовых изделий.</p>
-                            </div>
-                        </div>
-                        <div class="work-order-item">
-                            <div class="item-wrap">
-                                <p>На всех этапах работы специалист предоставляет бесплатную консультацию клиенту и грамотно отвечает на его вопросы.</p>
-                                <a href="" class="btn white" data-bs-toggle="modal" data-bs-target="#callModal">оставить заявку</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="completed">
-            <div class="container">
-                <div class="row">
-                    <h3 class="mb-4">Выполненные работы</h3>
-                </div>
-                <div class="row">
-                    <!-- <ul class="nav nav-pills mb-3" id="works-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="works-all-tab" data-bs-toggle="pill" data-bs-target="#works-all" type="button" role="tab" aria-controls="works-all" aria-selected="true">Всe</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="turning-tab" data-bs-toggle="pill" data-bs-target="#turning" type="button" role="tab" aria-controls="turning" aria-selected="false">Токарная обработка</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="milling-tab" data-bs-toggle="pill" data-bs-target="#milling" type="button" role="tab" aria-controls="milling" aria-selected="false">Фрезерная<br>обработка</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="grinding-tab" data-bs-toggle="pill" data-bs-target="#grinding" type="button" role="tab" aria-controls="grinding" aria-selected="false">Шлифовальные<br>работы</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="stamping-tab" data-bs-toggle="pill" data-bs-target="#stamping" type="button" role="tab" aria-controls="stamping" aria-selected="false">Штамповка деталей</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="instrumental-tab" data-bs-toggle="pill" data-bs-target="#instrumental" type="button" role="tab" aria-controls="instrumental" aria-selected="false">Инструментальное<br>производство</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="founding-tab" data-bs-toggle="pill" data-bs-target="#founding" type="button" role="tab" aria-controls="founding" aria-selected="false">Литье деталей</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="cutting-tab" data-bs-toggle="pill" data-bs-target="#cutting" type="button" role="tab" aria-controls="cutting" aria-selected="false">Резка трубок</button>
-                        </li>
-                    </ul> -->
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="works-all" role="tabpanel" aria-labelledby="works-all-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="works-all-slider">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <div class="slide-more-info">
-                                            <dl>
-                                                <dt>Клиент:</dt>
-                                                <dd>Объединенная авиастроительная корпорация</dd>
+        </div>
 
-                                                <div class="supernatant">
-                                                    <dt>Задача:</dt>
-                                                    <dd>Мы много работаем с наукоемкими отраслями, но также предлагаем высокоточную обработку и изготовление любых запчастей для промышленного оборудования. От пельменных барабанов до просечных ножей для гофрокартона.</dd>
-
-                                                    <dt>Что было сделано:</dt>
-                                                    <dd>
-                                                        <ol>
-                                                            <li>Постоянная работа по совершенствованию серийной и освоению новой продукции.</li>
-                                                            <li>Использование передовых ресурсосберегающих и экологически чистых технологий.</li>
-                                                        </ol>
-                                                    </dd>
-                                                    
-                                                </div>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <div class="slide-more-info">
-                                            <dl>
-                                                <dt>Клиент:</dt>
-                                                <dd>Объединенная авиастроительная корпорация</dd>
-
-                                                <div class="supernatant">
-                                                    <dt>Задача:</dt>
-                                                    <dd>Мы много работаем с наукоемкими отраслями, но также предлагаем высокоточную обработку и изготовление любых запчастей для промышленного оборудования. От пельменных барабанов до просечных ножей для гофрокартона.</dd>
-
-                                                    <dt>Что было сделано:</dt>
-                                                    <dd>
-                                                        <ol>
-                                                            <li>Постоянная работа по совершенствованию серийной и освоению новой продукции.</li>
-                                                            <li>Использование передовых ресурсосберегающих и экологически чистых технологий.</li>
-                                                        </ol>
-                                                    </dd>
-                                                    
-                                                </div>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="turning" role="tabpanel" aria-labelledby="turning-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="turning-slider">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="milling" role="tabpanel" aria-labelledby="milling-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="sl3">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="grinding" role="tabpanel" aria-labelledby="grinding-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="sl4">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="stamping" role="tabpanel" aria-labelledby="stamping-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="sl5">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="instrumental" role="tabpanel" aria-labelledby="instrumental-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="sl6">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="founding" role="tabpanel" aria-labelledby="founding-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="sl7">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="cutting" role="tabpanel" aria-labelledby="cutting-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="sl8">
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                                <div class="slider-item">
-                                    <img src="img/work_1.webp" alt="">
-                                    <div class="slide-info">
-                                        <h5>Выполненные работы 1</h5>
-                                        <p><span>Клиент:</span>Объединенная авиастроительная корпорация </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <section class="individual_form">
             <div class="container">
                 <div class="row">
@@ -562,136 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="clients py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="mb-5">Наши Клиенты</h4>
-                        <div class="clients-wrapper">
-                            <img src="img/metro.webp" alt="">
-                            <img src="img/mo.webp" alt="">
-                            <img src="img/roskosmos.webp" alt="">
-                            <img src="img/oak.webp" alt="">
-                            <img src="img/volg_aero.webp" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--<section class="faq">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3 class="mt-5 mb-3">Часто задаваемые вопросы</h3>
-                        <p>Отвечаем на все</p>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Уточните, какие конфигурации 1С поддерживаются модулем КЭДО?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <p>Модуль для 1С – это расширение конфигурации 1С, которое позволяет компаниям мгновенно обмениваться документами со своими сотрудниками прямо из 1С.</p>
-                                        <p>Расширение конфигурации  буквально ее расширяет, т.е. добавляет новые возможности без изменения конфигурации 1С, клиент остается на поддержке и своевременно получает обновления для своей 1С. </p>
-                                        <br>
-                                        <p><b>Модуль подойдет для клиентов с конфигурацией 1С:</b></p>
-                                        <ol>
-                                            <li>Зарплата и управление персоналом, редакция 3.1 (3.1.14.129) и выше</li>
-                                            <li>Зарплата и управление персоналом, редакция 2.5 (2.5.167.1) и выше</li>
-                                            <li>Управление производственным предприятием, ред. 1.3 (1.3.167.1) и выше</li>
-                                            <li>Бухгалтерия предприятия, редакция 3.0 (3.0.106.40) и выше</li>
-                                            <li>1C: ERP Управление предприятием 2 (2.5.8.191) и выше</li>
-                                            <li>Комплексная автоматизация 2.5 (2.5.8.191) и выше.</li>
-                                        </ol>   
-                                        <br>
-                                         
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Как у вас организован личный кабинет? Привязан к личному номеру телефона?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <p>Сотрудник может использовать на выбор любой из способов входа:</p>
-                                        <ol>
-                                            <li>по номеру телефона;</li>
-                                            <li>по адресу эл. почты;</li>
-                                            <li>по сертификату ключа электронной подписи (если закрытый ключ хранится у сотрудника).</li>
-                                        </ol>
-                                        <br>
-                                        Обратите внимание, если используется оНЭП, то номер телефона обязателен.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Когда планируется интеграция с порталом Работа в России?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        Интеграция будет планироваться в двух случаях:
-                                        <ul>
-                                            <li>Если будет обязательность от государства. Но пока ни в текущем законодательстве, ни в будущем этого нет.</li>
-                                            <li>Если будут бизнес-процессы от клиентов о том, как они планируют использовать эту интеграцию и как часто. Пока за 2 года обратная связь от сотрудников и кадровиков такая, что сотрудники не хотят использовать сторонний государственный сервис и желают запрашивать и получать документы напрямую в сервисе КЭДО.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        Оказываем ли мы помощь в работе с SSO?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        С SSO мы работаем, для этого нужно создать задачу на Проектный офис, далее, как обычно по их регламенту, подключится менеджер и будет сопровождать клиента в этой интеграции.
-                                        SSO в КЭДО пока предоставляем бесплатно.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        Когда будет приложение для телефонов?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        Приложение пока делать не планировали. Реализована мобильная вёрстка сайта для подписания документов. 
-                                        В 2023 году можем рассмотреть вариант создания мобильного приложения, если будут запросы от клиентов и обратная связь с причинами, почему им не подходит текущий вариант.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                        Можно ли работать в КЭДО с ЭП от Госуслуг?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        ЭП от Госуслуг называется Госключ.
-                                        Мы планируем добавить поддержку Госключа. Сейчас задача находится в проработке на стороне команд разработки направления УЦ, потому что интеграция с Госключом планируется не только для КЭДО. Точные сроки готовности пока сложно назвать
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-4"></div>
-                </div>
-            </div>
-        </section> -->
+
     </main>
     @@include('components/page-blocks/_footer.html',{
     "color": "blue"
