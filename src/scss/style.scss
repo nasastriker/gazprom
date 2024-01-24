@@ -192,12 +192,27 @@ label{
 			margin-bottom: 30px;
 			padding-right: 50px;
 		}
+		@media (max-width: 991.98px) {
+			h1{
+				font-size: 35px;
+				text-align: left !important;
+			}
+			.about-head-wrapper{
+				width: 100%;
+				padding: 20px 10px;
+			}
+			p{
+				text-align: left !important;
+				padding-right: 0;
+			}
+		}
 	}
 	&.text-center{
 		*{
 			text-align: center!important;
 		}
 	}
+
 }
 
 .competention{
@@ -393,21 +408,51 @@ label{
 		padding: 15px;
 		display: flex;
 		position: relative;
+
 		.number{
 			font-size: 50px;
 			font-family: 'furore';
 			color: var(--blue);
 		}
+		.work-tooltip{
+			display: none;
+			position: absolute;
+			background: #fff;
+			padding: 35px;
+			right: -80px;
+			width: 100%;
+			top: 100px;
+			transition: all .3s;
+			overflow: hidden;
+			height: 0;
+			h5{
+				font-weight: bold;
+				margin-bottom: 15px;
+			}
+			&.active{
+				display: block;
+				z-index: 33;
+				height: auto;
+			}
+		}
 		.item-wrap{
 			padding: 20px 50px;
 			background: #F3F3F3;
+			position: relative;
+			// a:hover + .work-tooltip{
+			// 	display: block;
+			// 	height: auto;
+			// }
 		}
-		a{
+		.show-tooltip{
 			color: var(--blue);
 			text-decoration-style: dotted;
   			text-decoration-line: underline;
   			font-weight: bold;
   			transition: all .3s;
+  			position: relative;
+  			z-index: 2;
+  			cursor: pointer;
   			&:hover{
   				text-decoration: none;
   			}
@@ -582,10 +627,38 @@ label{
 		p{
 			text-align: center;
 		}
+		@media (max-width: 991.98px) {
+			margin-top: 40px;
+			padding: 30px;
+		}
 	}
 	.more-info{
 		color:#212121;
 		margin-top: 120px;
+	}
+	@media (max-width: 991.98px) {
+		padding-bottom: 0!important;
+		.container{
+			padding: 0;
+			.individual_desc{
+				padding: 0 25px; 
+			}
+		}
+		.more-info{
+			margin-top: 0;
+			padding-top: 50px;
+			background: #fff;
+			padding: 0 25px;
+			p:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.form-check-label{
+	opacity: .5;
+	a{
+		text-decoration: underline;
 	}
 }
 // ================ FORM ====================
@@ -698,9 +771,21 @@ footer{
 			font-size: 24px;
 			text-align: center;
 			margin-bottom: 15px;
+			font-weight: normal;
 		}
 		p{
 			text-align: center;
+		}
+	}
+	form{
+		position: relative;
+		.btn-close{
+			position: absolute;
+			right: -30px;
+			top: -20px;
+			outline: none;
+			box-shadow: none;
+			border: none;
 		}
 	}
 }
@@ -838,10 +923,20 @@ footer{
 			margin-bottom: 20px;
 			.nav-link{
 				font-size: 30px;
+				@media (max-width: 991.98px) {
+					padding: 0!important;
+					width: auto;
+					display: inline-block !important;
+    				float: none !important;
+				}
 			}
 		}
 		.full-width{
 			display: none;
+		}
+		.advantage-title-slider{
+			display: flex;
+			flex-direction: row !important;
 		}
 	}
 
@@ -985,5 +1080,37 @@ footer{
 	.accordion-header *{
 		outline: 0!important;
 		box-shadow: none !important;
+	}
+}
+
+.faq{
+	.accordion-button{
+		background: #fff !important;
+		&.collapsed{
+			&::after{
+				content: "+";
+				display: flex;
+				background: var(--blue);
+				width: 31px;
+				height: 31px;
+				color: #fff;
+				justify-content: center;
+				align-items: center;
+				line-height: 17px;
+				transform: none;
+			}
+		}
+		&:not(.collapsed)::after {
+			content: "-";
+			display: flex;
+			background: var(--blue);
+			width: 31px;
+			height: 31px;
+			color: #fff;
+			justify-content: center;
+			align-items: center;
+			line-height: 17px;
+			transform: none;
+		}
 	}
 }

@@ -14,10 +14,25 @@
 				}
   			}
   		}
+  		h1{
+  			margin-bottom: 20px;
+  		}
+  		h1 + p{
+  			color: #F4F4F4;
+			font-size: 21px;
+			font-weight: 400;
+			line-height: 31.50px;
+  		}
   		form{
   			background: #fff;
-  			padding: 30px 30px 10px;
+  			padding: 30px 60px 10px;
   			color: #212121;
+  			p{
+  				text-align: center;
+  			}
+  			@media (max-width: 991.98px) {
+  				padding: 30px 30px 10px;
+  			}
   		}
 	}
 

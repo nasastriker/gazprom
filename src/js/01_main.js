@@ -98,9 +98,27 @@ $(document).ready(function() {
             }
         ]
     });
+
     
 
     
+    
+
+    $(".show-tooltip").on('click', function(e) {
+        if( $(e.target).hasClass('show-tooltip')){
+            $(this).siblings(".work-tooltip").addClass('active');
+        }
+    });
+    $(".work-order-item").on('mouseleave', function(e){
+        e.stopPropagation();
+        if( !$(e.relatedTarget).hasClass('work-tooltip')){
+            console.log(e.relatedTarget);
+            $(this).find('.work-tooltip').removeClass('active');
+        }else{
+            return false;
+        }
+
+    })
 
     $('.completed .nav-item').on('click', function() {
         // $(".works-slider").lightSlider({
@@ -190,4 +208,40 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.main-nav').toggleClass('active');
     })
+
+    function windowSize(){
+        if ($(window).width() <= '995'){
+            $('.advantage #v-pills-tab').addClass('advantage-title-slider');
+            var worksSlider = $(".advantage-title-slider").lightSlider({
+                item: 2,
+                pager: false,
+                autoWidth: true,
+                slideMargin: 20,
+                loop: false,
+                controls: false,
+                prevHtml: '<img src="img/arrow-left.svg">',
+                nextHtml: '<img src="img/arrow-left.svg">',
+                responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            item: 2,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            item: 1,
+                            slideMove: 1
+                        }
+                    }
+                ]
+            });
+        } else {
+            $('.advantage #v-pills-tab').removeClass('competention-title-slider');
+        }
+    }
+
+    $(window).on('load resize',windowSize);
 })
