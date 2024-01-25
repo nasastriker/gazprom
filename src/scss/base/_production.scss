@@ -4,15 +4,74 @@
 		color: #fff;
 		background-size: cover;
   		padding: 200px 0 0px;
+  		background-size: 130%;
+		background-position-y: 165px;
+		background-position-x: -200px;
 		form{
 			background: #fff;
-  			padding: 30px 30px 10px;
+  			padding: 30px 60px 10px;
   			color: #212121;
+  			p{
+  				font-size: 18px;
+				font-weight: 400;
+				line-height: 27px;
+  			}
+		}
+		.breadcrumb{
+			li{
+				a{
+					color: #fff;
+				}
+				&.active{
+					color: #fff;
+					opacity: .5;
+				}
+				&:before{
+					color: #fff;
+				}
+			}
+		}
+		h1{
+			font-size: 50px;
+		}
+		h1 + p{
+			color: #F4F4F4;
+			font-size: 21px;
+			font-weight: 400;
+			line-height: 31.50px;
+			margin-top: 20px;
+		}
+		@media (max-width: 575.98px) {
+			background: url(../img/production_bg_m.webp) no-repeat;
+			background-size: 100%;
+			padding: 100px 0 0;
+			margin-bottom: 0;
+			h1{
+				padding: 0 15px;
+				font-size: 35px;
+			}
+			h1 + p{
+				color: #F4F4F4;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 27px;
+				padding: 0 15px;
+			}
+			.prod-wrap{
+				padding: 0;
+			}
+			form{
+				padding: 30px 20px;
+				margin-top: 10px;
+			}
 		}
 	}
 }
 .production{
 	padding: 100px 0 50px;
+	@media (max-width: 575.98px) {
+		padding: 40px 0 50px;
+	}
 	h2{
 		margin-bottom: 30px;
 	}
@@ -38,10 +97,16 @@
 	&.deserts{
 		background: var(--blue);
 		color: #fff;
+		margin-top: -130px;
+  		padding-top: 150px;
+  		padding-bottom: 0;
 		.deserts-item{
 			.item-content{
 				background: var(--blue);
 				color: #fff;
+				@media (max-width: 575.98px) {
+					padding-top: 0;
+				}
 				p{
 					margin: 10px 0;
 				}
@@ -50,6 +115,12 @@
 				}
 			}
 		}
+		.deserts-wrapper{
+			@media (max-width: 575.98px) {
+				margin-bottom: 0;
+			}
+		}
+		
 		
 	}
 
@@ -58,6 +129,11 @@
 		color: #fff;
 		margin: 0;
 		padding: 0;
+		@media (max-width: 575.98px) {
+			.list-wrapper{
+				margin-bottom: 0;
+			}
+		}
 	}
 	ul{
 		li{

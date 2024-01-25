@@ -1,7 +1,9 @@
 .header{
 	&.service{
 		background: url(../img/service_bg_tocar.jpg) no-repeat;
-		background-size: cover;
+		background-size: 130%;
+		background-position-y: 165px;
+		background-position-x: -200px;
   		color: #fff;
   		padding: 200px 0 0px;
   		.breadcrump{
@@ -16,31 +18,84 @@
   		}
   		h1{
   			margin-bottom: 20px;
+  			font-size: 45px;
+  			@media (max-width: 991.98px) {
+  				font-size: 35px;
+  			}
   		}
   		h1 + p{
   			color: #F4F4F4;
 			font-size: 21px;
 			font-weight: 400;
 			line-height: 31.50px;
+			@media (max-width: 991.98px) {
+				font-size: 18px;
+				line-height: 27px;
+			}
   		}
   		form{
   			background: #fff;
   			padding: 30px 60px 10px;
   			color: #212121;
   			p{
-  				text-align: center;
+  				font-size: 18px;
+				font-weight: 400;
+				line-height: 27px;
+				text-align: center;
   			}
   			@media (max-width: 991.98px) {
   				padding: 30px 30px 10px;
   			}
   		}
+  		@media (max-width: 991.98px) {
+  			padding: 100px 0 0;
+  		}
+  		@media (max-width: 575.98px) {
+			background: url(../img/service_bg_m.webp) no-repeat;
+			background-size: 100%;
+			padding: 100px 0 0;
+			background-position-y: 70px;
+			margin-bottom: 0;
+
+			.prod-wrap{
+				padding: 0;
+			}
+
+			h1{
+				padding: 0 15px;
+			}
+			h1 + p{
+				color: #F4F4F4;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 27px;
+				padding: 0 15px;
+			}
+
+			form{
+				padding: 30px 20px;
+				margin-top: 10px;
+			}
+		}
 	}
 
+}
+.completed{
+	&.service{
+		@media (max-width: 991.98px) {
+			margin-bottom: 130px;
+		}
+	}
 }
 .compound{
 	padding: 50px 0;
 	h2{
 		margin-top: 40px;
+	}
+	h5{
+		text-transform: uppercase;
+		font-size: 21px;
+		margin-top: 10px;
 	}
 	&-wrapper{
 		display: flex;
@@ -73,7 +128,7 @@
 	margin-bottom: 30px;
 	.slider-item{
 		text-align: center;
-		background: #f3f3f3;
+		background: #fff;
 		padding: 30px;
 		img{
 			margin-bottom: 20px;
@@ -83,5 +138,97 @@
 			font-weight: bold;
 		}
 
+	}
+}
+
+.call-row{
+	background: url(../img/arc-welding-steel-construction-site.jpg) no-repeat;
+	color: #fff;
+	margin-bottom: 50px;
+	margin-top: -80px;
+	@media (max-width: 991.98px) {
+		background: url(../img/arc-welding-steel-construction-site_m.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+
+	h3 + p{
+		font-size: 21px;
+		font-weight: 400;
+		line-height: 31.50px;
+		span{
+
+		}
+	}
+	.show-tooltip{
+		text-decoration-style: dotted;
+  		text-decoration-line: underline;
+  		cursor: pointer;
+	}
+	.item-wrap {
+	  position: relative;
+	}
+	.work-tooltip{
+		display: none;
+		position: absolute;
+		background: #fff;
+		padding: 35px;
+		left: 100px;
+		width: 100%;
+		top: 50px;
+		-webkit-transition: .3s;
+		transition: .3s;
+		overflow: hidden;
+		height: 0;
+		color: #212121;
+		max-width: 400px;
+		width: 100%;
+		&.active{
+			display: block;
+			z-index: 33;
+			height: auto;
+		}
+		@media (max-width: 991.98px) {
+			left: 0;
+			top: 100px;
+		}
+	}
+	.input-row{
+		display: flex;
+		align-items: flex-start;
+  		justify-content: space-between;
+  		@media (max-width: 991.98px) {
+  			flex-direction: column;
+  		}
+	}
+	input{
+		background: rgba(255, 255, 255, 0.10);
+		border: 1px #E4E4E4 solid;
+		color: #fff;
+		margin-right: 20px;
+		width: 33%;
+		width: 100%;
+  		padding: 23px 20px;
+  		@media (max-width: 991.98px) {
+  			margin-right: 0;
+  			margin-bottom: 20px;
+  		}
+	}
+	.form-check-label a{
+		color: #fff;
+	}
+}
+
+.competention-item{
+	&.active{
+		&:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: var(--blue);
+			opacity: .8;
+		}
 	}
 }

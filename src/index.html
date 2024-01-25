@@ -18,7 +18,7 @@
                     <div class="col-sm-12">
                         <h1>Балакиревский филиал<span>АО «Газпром бытовые системы»</span></h1>
                         <div class="btn-row mt-5">
-                            <a href="" class="btn blue mr-5" onclick="callModal();">Услуги</a>
+                            <a href="production.html" class="btn blue mr-5" onclick="callModal();">Услуги</a>
                             <a href="" class="price">
                                 <img src="img/price.svg" class="mr-2" alt="">Прайс-лист
                             </a>
@@ -138,10 +138,11 @@
                         <p class="advantage-title">Почему выбирают нас</p>
                         <div class="title-wrapper ">
                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">ОПЫТ</button>
-                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">КАЧЕСТВО</button>
-                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">ПРОФЕССИОНАЛИЗМ</button>
-                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">ГИБКОСТЬ</button>
+
+                                <div><button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">ОПЫТ</button></div>
+                                <div><button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">КАЧЕСТВО</button></div>
+                                <div><button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">ПРОФЕССИОНАЛИЗМ</button></div>
+                                <div><button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">ГИБКОСТЬ</button></div>
                             </div>
                         </div>
 
@@ -303,6 +304,11 @@
                     <h3 class="mb-4">Выполненные работы</h3>
                 </div>
                 <div class="row">
+                    <div class="col-12 mobile">
+                        <div class="select-completed">
+                            По направлению: <span>Все </span>
+                        </div>
+                    </div>
                     <ul class="nav nav-pills mb-3" id="works-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="works-all-tab" data-bs-toggle="pill" data-bs-target="#works-all" type="button" role="tab" aria-controls="works-all" aria-selected="true">Всe</button>
@@ -311,16 +317,16 @@
                             <button class="nav-link" id="turning-tab" data-bs-toggle="pill" data-bs-target="#turning" type="button" role="tab" aria-controls="turning" aria-selected="false">Токарная обработка</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="milling-tab" data-bs-toggle="pill" data-bs-target="#milling" type="button" role="tab" aria-controls="milling" aria-selected="false">Фрезерная<br>обработка</button>
+                            <button class="nav-link" id="milling-tab" data-bs-toggle="pill" data-bs-target="#milling" type="button" role="tab" aria-controls="milling" aria-selected="false">Фрезерная обработка</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="grinding-tab" data-bs-toggle="pill" data-bs-target="#grinding" type="button" role="tab" aria-controls="grinding" aria-selected="false">Шлифовальные<br>работы</button>
+                            <button class="nav-link" id="grinding-tab" data-bs-toggle="pill" data-bs-target="#grinding" type="button" role="tab" aria-controls="grinding" aria-selected="false">Шлифовальные работы</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="stamping-tab" data-bs-toggle="pill" data-bs-target="#stamping" type="button" role="tab" aria-controls="stamping" aria-selected="false">Штамповка деталей</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="instrumental-tab" data-bs-toggle="pill" data-bs-target="#instrumental" type="button" role="tab" aria-controls="instrumental" aria-selected="false">Инструментальное<br>производство</button>
+                            <button class="nav-link" id="instrumental-tab" data-bs-toggle="pill" data-bs-target="#instrumental" type="button" role="tab" aria-controls="instrumental" aria-selected="false">Инструментальное производство</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="founding-tab" data-bs-toggle="pill" data-bs-target="#founding" type="button" role="tab" aria-controls="founding" aria-selected="false">Литье деталей</button>
@@ -340,7 +346,9 @@
                                             <dl>
                                                 <dt>Клиент:</dt>
                                                 <dd>Объединенная авиастроительная корпорация</dd>
-
+                                                <span class="mobile open-more-info">
+                                                    Развернуть
+                                                </span>
                                                 <div class="supernatant">
                                                     <dt>Задача:</dt>
                                                     <dd>Мы много работаем с наукоемкими отраслями, но также предлагаем высокоточную обработку и изготовление любых запчастей для промышленного оборудования. От пельменных барабанов до просечных ножей для гофрокартона.</dd>
@@ -357,6 +365,21 @@
                                             </dl>
                                         </div>
                                     </div>
+
+                                    <div class="supernatant mobile">
+                                        <dt>Задача:</dt>
+                                        <dd>Мы много работаем с наукоемкими отраслями, но также предлагаем высокоточную обработку и изготовление любых запчастей для промышленного оборудования. От пельменных барабанов до просечных ножей для гофрокартона.</dd>
+
+                                        <dt>Что было сделано:</dt>
+                                        <dd>
+                                            <ol>
+                                                <li>Постоянная работа по совершенствованию серийной и освоению новой продукции.</li>
+                                                <li>Использование передовых ресурсосберегающих и экологически чистых технологий.</li>
+                                            </ol>
+                                        </dd>
+                                        
+                                    </div>
+
                                 </div>
                                 <div class="slider-item">
                                     <img src="img/work_1.webp" alt="">
@@ -405,7 +428,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="milling" role="tabpanel" aria-labelledby="milling-tab" tabindex="0">
-                            <div class="slider-wrapper works-slider" id="sl3">
+                            <div class="slider-wrapper <!-- works-slider -->" id="sl3">
                                 <div class="slider-item">
                                     <img src="img/work_1.webp" alt="">
                                     <div class="slide-info">
@@ -522,12 +545,7 @@
                     <div class="col-sm-6 individual_desc">
                         <p class="individual_form_title">Наша компания занимается производством металлоизделий согласно чертежам и образцам заказчика. Наш опыт, полученный и систематизированный в работе с нашими партнерами, позволит представить Вам конкурентоспособное предложение, не снижая при этом высокого качества продукции.</p>
                         <h3>Связаться с нами</h3>
-                        <div class="addres-wrapper d-flex mb-3">
-                            <img src="img/map_ico_white.svg" class="mt-2 mr-2" alt="">
-                            <div>
-                                Адрес: 601630, Владимирская обл., Александровский район,<br>п. Балакирево, ул. Заводская, д. 10
-                            </div>
-                        </div>
+                        
                         <div class="phone-wrapper d-flex align-items-start mb-3">
                             <img src="img/phone_white_ico.svg" class="mt-2 mr-2" alt="">
                             <a href="tel:+7(49244)7-44-37" class="nav-phone">
@@ -537,8 +555,17 @@
                                     <span>Пн-Пт 9:00 - 18:00</span>
                                 </div>
                             </a>
+                            <a href="javascript:void(0)" class="btn-dotted d-block" data-bs-toggle="modal" data-bs-target="#callModal">Заказать звонок</a>
                         </div>
-                        <a href="mail-to:@info.com" class="mail my-3">
+
+                        <div class="addres-wrapper d-flex mb-3">
+                            <img src="img/map_ico_white.svg" class="mt-2 mr-2" alt="">
+                            <div>
+                                Адрес: 601630, Владимирская обл., Александровский район,<br>п. Балакирево, ул. Заводская, д. 10
+                            </div>
+                        </div>
+                        
+                        <a href="mail-to:bf-zakaz@gazprom-bs.ru" class="mail my-3">
                             <img src="img/mail_ico_white.svg" class="mr-2" alt="">
                             bf-zakaz@gazprom-bs.ru
                         </a>
@@ -549,7 +576,7 @@
                             <p>Автотранспортом компании по предварительной договорённости.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 mt-sm-5">
+                    <div class="col-sm-6 ">
                         <form>
                             <h3>Заказать расчёт</h3>
                             <p>Напишите о вашей задаче, мы перезвоним вам и проконсультируем по стоимости и порядку работ.</p>
@@ -578,7 +605,7 @@
                             <div class="mb-4">
                                 <label class="form-check-label" for="policy">Нажимая кнопку “Отправить заявку”, вы соглашаетесь с <a href="privasy.html" class="form-privasy">политикой конфиденциальности</a></label>
                             </div>
-                            <img src="img/dot_black.svg" alt="">
+                            <img src="img/dot_black.svg" class="mt-5" alt="">
                         </form>
 
                         <div class="more-info mobile">
@@ -607,120 +634,7 @@
                 </div>
             </div>
         </section>
-        <!--<section class="faq">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3 class="mt-5 mb-3">Часто задаваемые вопросы</h3>
-                        <p>Отвечаем на все</p>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Уточните, какие конфигурации 1С поддерживаются модулем КЭДО?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <p>Модуль для 1С – это расширение конфигурации 1С, которое позволяет компаниям мгновенно обмениваться документами со своими сотрудниками прямо из 1С.</p>
-                                        <p>Расширение конфигурации  буквально ее расширяет, т.е. добавляет новые возможности без изменения конфигурации 1С, клиент остается на поддержке и своевременно получает обновления для своей 1С. </p>
-                                        <br>
-                                        <p><b>Модуль подойдет для клиентов с конфигурацией 1С:</b></p>
-                                        <ol>
-                                            <li>Зарплата и управление персоналом, редакция 3.1 (3.1.14.129) и выше</li>
-                                            <li>Зарплата и управление персоналом, редакция 2.5 (2.5.167.1) и выше</li>
-                                            <li>Управление производственным предприятием, ред. 1.3 (1.3.167.1) и выше</li>
-                                            <li>Бухгалтерия предприятия, редакция 3.0 (3.0.106.40) и выше</li>
-                                            <li>1C: ERP Управление предприятием 2 (2.5.8.191) и выше</li>
-                                            <li>Комплексная автоматизация 2.5 (2.5.8.191) и выше.</li>
-                                        </ol>   
-                                        <br>
-                                         
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Как у вас организован личный кабинет? Привязан к личному номеру телефона?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <p>Сотрудник может использовать на выбор любой из способов входа:</p>
-                                        <ol>
-                                            <li>по номеру телефона;</li>
-                                            <li>по адресу эл. почты;</li>
-                                            <li>по сертификату ключа электронной подписи (если закрытый ключ хранится у сотрудника).</li>
-                                        </ol>
-                                        <br>
-                                        Обратите внимание, если используется оНЭП, то номер телефона обязателен.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Когда планируется интеграция с порталом Работа в России?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        Интеграция будет планироваться в двух случаях:
-                                        <ul>
-                                            <li>Если будет обязательность от государства. Но пока ни в текущем законодательстве, ни в будущем этого нет.</li>
-                                            <li>Если будут бизнес-процессы от клиентов о том, как они планируют использовать эту интеграцию и как часто. Пока за 2 года обратная связь от сотрудников и кадровиков такая, что сотрудники не хотят использовать сторонний государственный сервис и желают запрашивать и получать документы напрямую в сервисе КЭДО.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        Оказываем ли мы помощь в работе с SSO?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        С SSO мы работаем, для этого нужно создать задачу на Проектный офис, далее, как обычно по их регламенту, подключится менеджер и будет сопровождать клиента в этой интеграции.
-                                        SSO в КЭДО пока предоставляем бесплатно.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        Когда будет приложение для телефонов?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        Приложение пока делать не планировали. Реализована мобильная вёрстка сайта для подписания документов. 
-                                        В 2023 году можем рассмотреть вариант создания мобильного приложения, если будут запросы от клиентов и обратная связь с причинами, почему им не подходит текущий вариант.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                        Можно ли работать в КЭДО с ЭП от Госуслуг?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        ЭП от Госуслуг называется Госключ.
-                                        Мы планируем добавить поддержку Госключа. Сейчас задача находится в проработке на стороне команд разработки направления УЦ, потому что интеграция с Госключом планируется не только для КЭДО. Точные сроки готовности пока сложно назвать
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-4"></div>
-                </div>
-            </div>
-        </section> -->
+
     </main>
     @@include('components/page-blocks/_footer.html',{
     "color": "blue"

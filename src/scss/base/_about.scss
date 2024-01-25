@@ -1,3 +1,12 @@
+.header{
+	&.about-bg{
+		@media (max-width: 991.98px) {
+			.container-fluid{
+				padding: 0;
+			}
+		}
+	}
+}
 .about-basic{
 	background: var(--blue);
 	margin-top: -250px;
@@ -11,6 +20,20 @@
 		margin-bottom: 60px;
 		ul{
 			width: 50%;
+			li{
+				position: relative;
+				padding-left: 30px;
+				&::before{
+					content: "";
+					width: 20px;
+					height: 3px;
+					background: #6899ed;
+					display: block;
+					left: 0;
+					position: absolute;
+					top: 12px;
+				}
+			}
 		}
 	}
 	@media (max-width: 991.98px) {

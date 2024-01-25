@@ -1,4 +1,40 @@
 $(document).ready(function() {
+    function windowSize(){
+        if ($(window).width() <= '995'){
+            $('.advantage #v-pills-tab').addClass('advantage-title-slider');
+            var worksSlider = $(".advantage-title-slider").lightSlider({
+                item: 2,
+                pager: false,
+                autoWidth: true,
+                slideMargin: 20,
+                loop: false,
+                controls: false,
+                prevHtml: '<img src="img/arrow-left.svg">',
+                nextHtml: '<img src="img/arrow-left.svg">',
+                responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            item: 2,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            item: 1,
+                            slideMove: 1
+                        }
+                    }
+                ]
+            });
+        } else {
+            $('.advantage #v-pills-tab').removeClass('competention-title-slider');
+        }
+    }
+
+    $(window).on('load resize',windowSize);
+    
 
     var worksSlider = $(".works-slider").lightSlider({
         item: 2,
@@ -72,7 +108,7 @@ $(document).ready(function() {
         ]
     });
 
-    var worksSlider = $("#clients-review").lightSlider({
+    var clientsSlider = $("#clients-review").lightSlider({
         item: 2,
         pager: false,
         autoWidth: false,
@@ -101,15 +137,38 @@ $(document).ready(function() {
 
     
 
+    $(".open-more-info").on('click', function(e) {
+        $(this).parents('.slider-item').find('.supernatant.mobile').toggleClass('active')
+    });
     
-    
+    $(".select-completed").on('click', function(e) {
+        $("#works-tab").toggleClass('active');
+    });
+    $(".nav-item").on('click', function(e) {
+        $("#works-tab").removeClass('active');
+        var target = $(this).find('button').text();
+
+        $(".select-completed span").html(target);
+
+        // var slider = $(".works-slider").lightSlider({
+        //     item: 1,
+        //     pager: false,
+        //     autoWidth: false,
+        //     slideMargin: 0,
+        //     loop: true,
+        //     controls: true,
+        //     prevHtml: '<img src="img/arrow-left.svg">',
+        //     nextHtml: '<img src="img/arrow-left.svg">',
+        // });
+
+    });
 
     $(".show-tooltip").on('click', function(e) {
         if( $(e.target).hasClass('show-tooltip')){
             $(this).siblings(".work-tooltip").addClass('active');
         }
     });
-    $(".work-order-item").on('mouseleave', function(e){
+    $(".work-order-item, .call-row .item-wrap").on('mouseleave', function(e){
         e.stopPropagation();
         if( !$(e.relatedTarget).hasClass('work-tooltip')){
             console.log(e.relatedTarget);
@@ -209,39 +268,5 @@ $(document).ready(function() {
         $('.main-nav').toggleClass('active');
     })
 
-    function windowSize(){
-        if ($(window).width() <= '995'){
-            $('.advantage #v-pills-tab').addClass('advantage-title-slider');
-            var worksSlider = $(".advantage-title-slider").lightSlider({
-                item: 2,
-                pager: false,
-                autoWidth: true,
-                slideMargin: 20,
-                loop: false,
-                controls: false,
-                prevHtml: '<img src="img/arrow-left.svg">',
-                nextHtml: '<img src="img/arrow-left.svg">',
-                responsive: [{
-                        breakpoint: 800,
-                        settings: {
-                            item: 2,
-                            slideMove: 1,
-                            slideMargin: 6,
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            item: 1,
-                            slideMove: 1
-                        }
-                    }
-                ]
-            });
-        } else {
-            $('.advantage #v-pills-tab').removeClass('competention-title-slider');
-        }
-    }
-
-    $(window).on('load resize',windowSize);
+    
 })
